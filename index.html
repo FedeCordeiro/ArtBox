@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" media="screen" href="canvas.css" />
+    <title>Figuras</title>
+  </head>
+  <body onload="main()">
+    <h1>ArtBox</h1>
+    <section id="paint">
+      <div class="tools">
+        <button id="all-clean" title="Nuevo"><img src="assets/new.svg" width="40px" height="40px"></img></button>
+        <button id="save" title="Guardar"><img src="assets/save.svg" width="30px" height="40px"></img></button>
+        <button id="pencil" title="Lapiz"><img src="assets/pencil.svg" width="35px" height="40px"></img></button>
+        <button id="eraser" title="Goma"><img src="assets/eraser.svg" width="35px" height="40px"></img></button>
+        <label for="add-image" class="custom-file-upload">
+          <img src="assets/image.svg" width="38px" height="40px" alt="Subir imagen">
+        </label>
+        <input id="add-image" type="file" title="Nueva Imagen">
+        <div class="colors">
+          <input id="color-picker" type="color" value="#000000" title="Seleccionar color">
+        </div>
+      </div>
+      <canvas id="canvas" width="1350" height="620"></canvas>
+      <div class="filters">
+        <button id="lowbrightness" title="Disminuir Brillo"><img src="assets/lowbrightness.svg" width="40px" height="40px"></img></input>
+        <button id="addbrightness" title="Aumentar Brillo" ><img src="assets/addbrightness.svg" width="40px" height="40px"></img></input>
+        <button id="black-white" title="Escala de Grises"><img src="assets/black-white.svg" width="40px" height="40px"></img></button>
+        <button id="sepia" title="Sepia"><img src="assets/sepia.svg" width="40px" height="40px"></img></button>
+        <button id="monochromatic" title="Monocromatico"><img src="assets/monocromatico.svg" width="40px" height="40px"></img></button>
+        <button id="negative" title="Negativo"><img src="assets/negativo.svg" width="40px" height="40px"></img></button>
+        <button id="binarizacion" title="Binarizacion"><img src="assets/binarizacion.svg" width="37px" height="38px"></img></button>
+        <button id="blur" title="Blur"><img src="assets/blur.svg" width="38px" height="38px"></img></button>
+        <button id="border" title="Bordes"><img src="assets/border.svg" width="38px" height="38px"></img></button>
+        <button id="saturacion" title="Saturacion"><img src="assets/saturacion.svg" width="37px" height="38px"></img></button>
+        <button id="undoFilter" title="Restablecer imagen"><img src="assets/undo.svg" width="37px" height="37px"></img></button>
+        
+      </div>
+    </section>
+
+    <script src="js/Pencil.js"></script>
+    <script src="js/ImageCanvas.js"></script>
+    <script src="js/Filter.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

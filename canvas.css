@@ -1,0 +1,82 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+#add-image {
+  display: none;
+}
+
+#paint {
+  display: flex;
+  flex-direction: row;
+}
+
+.tools {
+  display: flex;
+  flex-direction: column;
+}
+
+.colors {
+  width: 75px;
+  height: 60px;
+  background: gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid;
+}
+
+#color-picker {
+  width: 50px;
+  height: 50px;
+}
+
+.filters {
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+}
+
+input, button, label {
+  border-style: none;
+  background-color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 75px;
+  height: 60px;
+}
+
+button:hover, label:hover {
+  background: goldenrod;
+}
+
+#brightness {
+  width: 70px;
+  height: 40px;
+}
+  
+canvas {
+  border: none;
+  background-color: white;
+}
+
+#txt {
+  font-size: 30px;
+}
+
+h1 {
+  font-size: 30px;
+  padding: 0px;
+  margin: 1px;
+  text-align: center;
+  color: goldenrod;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
